@@ -13,6 +13,12 @@
                 window.location.href = 'twitter://post?text=test'
 
             })
+
+            document.getElementById('deep-link-button-facebook').addEventListener('click', () => {
+                console.log("Click button facebook");
+                window.location.href = 'fb://profile/240995729348595'
+
+            })
         };
     </script>
     <title>test deep link</title>
@@ -25,8 +31,12 @@
     <br />
     <a href="twitter://post?text=test">Direct Deep Link Twitter </a>
     <br/>
+    <a href="fb://profile/240995729348595">Direct Deep Link Facebook </a>
+    <br/><br/>
     <button id="deep-link-button">Deep Link MES click </button>
     <br/>
     <button id="deep-link-button-twitter">Deep Link Twitter click </button>
+    <br/>
+    <button id="deep-link-button-facebook">Deep Link facebook click </button>
 </body>
 </html>
